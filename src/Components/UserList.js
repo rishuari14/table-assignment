@@ -66,7 +66,7 @@ const UserList = ({ users, updateUser, deleteUser }) => {
               <StyledTableBodyCell>{user.mobile}</StyledTableBodyCell>
               <StyledTableBodyCell >
                 <Button  variant='contained' onClick={() => handleEditUser(user)}>Edit</Button>
-                <Button sx={{ marginLeft: '8px' }} variant='contained' onClick={() => handleDeleteUser(user)}>Delete</Button>
+                <Button  sx={{ marginLeft: '8px',background:'grey' }} variant='contained' onClick={() => handleDeleteUser(user)}>Delete</Button>
               </StyledTableBodyCell>
             </TableRow>
           ))}
